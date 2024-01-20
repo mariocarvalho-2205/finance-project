@@ -1,6 +1,6 @@
 export const getCurrentMonth = () => {
     let now = new Date();
-    return `${now.getFullYear()} - ${now.getMonth()+1}`
+    return `${now.getFullYear()} - ${now.getMonth() + 1}`
 }
 
 // filtra o mes e a data com os items 
@@ -27,5 +27,8 @@ export const formateDate = (date) => {
     let month = date.getMonth() + 1;
     let day = date.getDate()
 
-    return `${day}/${month}/${year}`
+    return `${addZeroToDate(day)}/${addZeroToDate(month)}/${year}`
 }
+
+const addZeroToDate = (n) => n < 10 ? `0${n}` : `${n}`;
+    

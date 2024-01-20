@@ -12,13 +12,13 @@ export const items = [
         value:  980
     },
     { 
-        date: new Date(2023, 11, 15),
+        date: new Date(2023, 12, 12),
         category: 'food',
         title: 'Yan Ping',
         value:  135.20
     },
     { 
-        date: new Date(2023, 12, 20),
+        date: new Date(2023, 12, 2),
         category: 'salary',
         title: 'Salário Bruno',
         value:  2000
