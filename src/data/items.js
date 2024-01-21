@@ -1,6 +1,6 @@
 export const items = [
     { 
-        date: new Date(2023, 12, 2),
+        date: new Date(2024, 1, 2),
         category: 'food',
         title: 'McDonalds',
         value:  32.12
@@ -18,7 +18,7 @@ export const items = [
         value:  135.20
     },
     { 
-        date: new Date(2023, 12, 2),
+        date: new Date(2023, 12, 1),
         category: 'salary',
         title: 'Salário Bruno',
         value:  2000
