@@ -5,6 +5,7 @@ import { categories } from '../src/data/category'
 import { getCurrentMonth, filterListByMonth } from './helpers/dateFilter'
 import { TableArea } from './components/TableArea';
 import { InfoArea } from './components/InfoArea';
+import { InputArea } from './components/InputArea';
 import './App.css'
 // parou no minuto 37
 
@@ -43,6 +44,12 @@ function App() {
     setCurrentMonth(newMonth)
   }
 
+  const handleAddItem = ( item) => {
+    let newList = [...list]
+    newList.push(item)
+    setList(newList)
+  }
+
   return (
     <C.Container >
       <C.Header>
@@ -62,6 +69,7 @@ function App() {
 
 
         {/* Area de Iserção */}
+        <InputArea onAdd={handleAddItem}/>
 
 
         {/* Area de Itens */}
